@@ -1,4 +1,4 @@
-package duplicate_encoder
+package solutions
 
 /*
 link: https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/go
@@ -16,8 +16,7 @@ func DuplicateEncode(word string) string {
   
   for _, char := range word {
     _, exist := wordCounts[char]
-    
-    
+
     if exist {
       wordCounts[char] += 1;
     }else {
