@@ -27,10 +27,10 @@ func NextSmaller(n int) int {
     return -1
   } 
   
-	strNum := strconv.Itoa(n)
+  strNum := strconv.Itoa(n)
   r := []rune(strNum)
 
-	for i := len(r) - 1; i > 0; i-- {
+  for i := len(r) - 1; i > 0; i-- {
     if r[i - 1] > r[i] {
       maxIndex := -1
       for j := len(r) - 1; j > i - 1; j-- {
@@ -60,6 +60,6 @@ func NextSmaller(n int) int {
       }
       return result
     }
-	}
+  }
   return -1
 }
